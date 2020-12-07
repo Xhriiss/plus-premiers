@@ -1,0 +1,101 @@
+* {
+    box-sizing: border-box;
+    outline: none;
+}
+
+@font-face {
+    src: url(../fonts/Commissioner-Black.ttf);
+    font-family: CommissionerBlack;
+}
+
+@font-face {
+    src: url(../fonts/Commissioner-Medium.ttf);
+    font-family: commissionermedium;
+}
+
+@font-face {
+    src: url(../fonts/Commissioner-SemiBold.ttf);
+    font-family: CommissionerSemibold;
+}
+
+@font-face {
+    src: url(../fonts/Commissioner-Regular.ttf);
+    font-family: CommissionerRegular;
+}
+
+:root {
+    --primary-color: #222;
+    --primary-nav-color: rgb(3, 3, 3);
+    --dark-color: #da0f47;
+    --secondary-color: #f25209;
+    --primary-bg-color: #f7f7f7;
+    --light-color: white;
+}
+
+body {
+    padding: 0px;
+    margin: 0px;
+    font-family: CommissionerRegular;
+    font-size: 16px;
+}
+
+a {
+    text-decoration: none;
+    color: var(--primary-color);
+}
+
+a:hover {
+    color: var(--dark-color);
+}
+
+.wrapper {
+    width: 80%;
+    margin: auto;
+}
+
+.nav-menu {
+    display: flex;
+    justify-content: space-between;
+}
+
+.nav-menu ul {
+    list-style: none;
+    padding: 0px;
+    margin: 0px;
+}
+
+.nav-links {
+    display: flex;
+}
+
+.nav-links li {
+    margin: 0px 10px;
+}
+
+.nav-links li a {
+    color: var(--primary-bg-color);
+    font-size: 20px;
+}
+
+.nav-header {
+    background-color: var(--primary-nav-color);
+    padding: 10px 0px;
+}
+
+.logo {
+    width: 17%;
+}
+
+.logo img {
+    width: 100%;
+}
+
+.search {
+    color: var(--light-color);
+}
+
+.active-nav {
+    background-color: var(--dark-color);
+    padding: 4px 15px;
+    border-radius: 5px;
+}
