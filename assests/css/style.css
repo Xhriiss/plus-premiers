@@ -28,7 +28,7 @@
     --primary-nav-color: rgb(3, 3, 3);
     --dark-color: #da0f47;
     --secondary-color: #f25209;
-    --primary-bg-color: #f7f7f7;
+    --primary-bg-color: #cccaca;
     --light-color: white;
 }
 
@@ -45,7 +45,7 @@ a {
 }
 
 a:hover {
-    color: var(--dark-color);
+    color: var(--primary-color);
 }
 
 .wrapper {
@@ -56,6 +56,7 @@ a:hover {
 .nav-menu {
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
 
 .nav-menu ul {
@@ -70,6 +71,8 @@ a:hover {
 
 .nav-links li {
     margin: 0px 10px;
+    padding: 5px 0px;
+    display: block;
 }
 
 .nav-links li a {
@@ -79,7 +82,7 @@ a:hover {
 
 .nav-header {
     background-color: var(--primary-nav-color);
-    padding: 10px 0px;
+    /* padding: 10px 0px; */
 }
 
 .logo {
@@ -98,4 +101,99 @@ a:hover {
     background-color: var(--dark-color);
     padding: 4px 15px;
     border-radius: 5px;
+}
+.genres{
+    position: relative;
+    padding: 0px;
+ 
+
+}
+.sub-menu{
+    display: none;
+    position: absolute;
+    background-color: var(--primary-nav-color);
+    top :34px;
+    padding: 0px;
+
+}
+.genres:hover >.sub-menu{
+    display: block;
+}
+.sub-menu li:hover{
+    background-color: var(--dark-color);
+
+}
+.slide-cont{
+    overflow: hidden;
+}
+.slider{
+    display: flex;
+    width: 300%;
+   
+}
+.slides img{
+    height: 100%;
+    width: 100%;
+}
+.slides{
+    height: 200px;
+    width: 60vw;
+    animation: SlideImg;
+    animation-duration: 5s;
+    animation-timing-function: linear;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+
+}
+@keyframes SlideImg{
+    0%{
+        transform: translateX(-65%);
+    }
+    25%{
+        transform: translateX(-65%);
+    }
+    30%{
+        transform: translateX(-165%);
+    }
+    50%{
+        transform: translateX(-165%);
+    }
+    55%{
+        transform: translateX(-265%);
+    }
+    80%{
+        transform: translateX(-265%);
+    }
+    90%{
+        transform: translateX(-300%);
+    }
+    100%{
+        transform: translateX(-300%);
+    }
+
+
+   
+}
+.heading{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 20px;
+    padding: 5px 0px;
+    border-bottom: 1px solid var(--primary-bg-color);
+}
+.heading p{
+    padding: 0px;
+    margin: 0px;
+}
+.socials a:link{
+     text-decoration: none;
+     color: var(--primary-nav-color);
+}
+.socials a:hover{
+    text-decoration: underline;
+    color: var(--primary-nav-color);
+}
+.socials a:visited{
+    color: var(--primary-nav-color);
 }
