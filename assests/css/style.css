@@ -47,7 +47,10 @@ a {
 a:hover {
     color: var(--primary-color);
 }
-
+p{
+    padding: opx;
+    margin: 0px;
+}
 .wrapper {
     width: 80%;
     margin: auto;
@@ -82,7 +85,7 @@ a:hover {
 
 .nav-header {
     background-color: var(--primary-nav-color);
-    /* padding: 10px 0px; */
+   
 }
 
 .logo {
@@ -114,6 +117,9 @@ a:hover {
     background-color: var(--primary-nav-color);
     top :34px;
     padding: 0px;
+    z-index: 10;
+    height: 60vh;
+    overflow: scroll;
 
 }
 .genres:hover >.sub-menu{
@@ -181,6 +187,7 @@ a:hover {
     font-size: 20px;
     padding: 5px 0px;
     border-bottom: 1px solid var(--primary-bg-color);
+
 }
 .heading p{
     padding: 0px;
@@ -191,9 +198,202 @@ a:hover {
      color: var(--primary-nav-color);
 }
 .socials a:hover{
-    text-decoration: underline;
+    
     color: var(--primary-nav-color);
 }
 .socials a:visited{
     color: var(--primary-nav-color);
+}
+.cartigory-heading{
+    display: flex;
+    justify-content: space-between;
+}
+.main-box{
+    display: flex;
+   
+}
+.for-uploads{
+    width: 60%;
+}
+.main-cont{
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    grid-template-rows:  1fr;
+    grid-gap: 10px;
+    overflow: scroll;
+    margin-right: 5px;
+
+}
+.releases-cat{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-right: 5px;
+
+}
+.chat-cat{
+    display: flex;
+    justify-content: space-between;
+    margin-left: 5px;
+    padding: 10px 0px;
+
+}
+.chat-cat p{
+    font-size: 25px;
+}
+.releases{
+    width: 120px;
+}
+.releases img{
+    width: 100%;
+}
+.category{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 0px;
+}
+.releases-cat a:link{
+    color: var(--dark-color);
+
+}
+.releases-caty a:hover{
+    color: var(--dark-color);
+}
+.releases-cat a:visited{
+    color: var(--dark-color);
+}
+.releases-cat p{
+    font-size: 25px;
+}
+.new-songs-cont{
+    overflow: scroll;
+    display: grid;
+    grid-template-columns: repeat(4, 45%) ;
+    grid-gap: 10px;
+    margin-top: 10px;
+}
+.new-song-link img{
+    width: 70px;
+}
+
+.new-song-link{
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+}
+.new-song-link img{
+    margin-right: 10px;
+}
+.with-border{
+    margin-top: 30px;
+    border-bottom: 1px solid var(--primary-bg-color);
+    border-top: 1px solid var(--primary-bg-color);
+}
+.new-songs{
+   width: 100%;
+}
+.desc{
+    border-top: 1px solid var(--primary-bg-color)  ;
+    display: block;    
+    padding-bottom: 20px;
+    padding-top: 7px;
+}
+.upcoming-albums{
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    grid-gap: 10px;
+    overflow: scroll;
+
+}
+.upcoming-album-link img{
+    width: 150px;
+
+}
+.upcoming-album-link {
+    font-size: 13px;
+}
+.upcoming-album-link p{
+    font-size: 16px;
+}
+main img{
+    border-radius: 10px;
+}
+.alert{
+    font-size: 50px;
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+}
+.sub{
+    font-size: 20px;
+    background-color: var(--primary-nav-color);
+    color: var(--light-color);
+    padding: 5px;
+    margin-left: 10px;
+    text-align: center;
+    display: none;
+}
+.alert a{
+    display: flex;
+    align-items: center ;
+   
+}
+.alert:hover .sub{
+   display: block;
+}
+.alert a:link{
+    color: var(--dark-color);
+}
+.alert a:hover{
+    color: var(--dark-color);
+}
+.alert a:visited{
+    color: var(--dark-color);
+}
+.artist-link:link{
+    color: var(--dark-color);
+
+}
+.artist-link:hover{
+    color: var(--dark-color);
+
+}.artist-link:visited{
+    color: var(--dark-color);
+
+}
+.all-iframes{
+    width: 40%;
+    margin-left: 5px;
+}
+footer{
+    display: flex;
+    justify-content: space-between;
+}
+.footer-nav{
+    list-style: none;
+    display: flex;
+}
+.logo-desc{
+    display: flex;
+    align-items: center;
+}
+.logo-desc img{
+    width: 120px;
+    margin-right: 10px;
+}
+.footer-nav li{
+    padding-left: 15px;
+}
+.footer-nav a:link{
+    color: var(--primary-nav-color);
+}
+.footer-nav a:hover{
+    color: var(--dark-color);
+}.footer-nav a:visited{
+    color: var(--dark-color);
+}
+.border-for-footer{
+    border-top: 1px solid var(--primary-bg-color);
+    margin: 20px 0px ;
+
 }
