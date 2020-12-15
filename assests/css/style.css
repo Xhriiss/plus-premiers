@@ -147,8 +147,9 @@ p{
     animation: SlideImg;
     animation-duration: 5s;
     animation-timing-function: linear;
-    animation-direction: alternate;
     animation-iteration-count: infinite;
+    animation-direction: alternate-reverse;
+   
 
 }
 @keyframes SlideImg{
@@ -170,15 +171,12 @@ p{
     80%{
         transform: translateX(-265%);
     }
-    90%{
-        transform: translateX(-300%);
+    85%{
+        transform: translateX(-320%);
     }
     100%{
-        transform: translateX(-300%);
+        transform: translateX(-320%);
     }
-
-
-   
 }
 .heading{
     display: flex;
@@ -396,4 +394,133 @@ footer{
     border-top: 1px solid var(--primary-bg-color);
     margin: 20px 0px ;
 
+}
+.first-iframe{
+    width: 100%;
+    height: 55vh;
+    
+}
+.full-width{
+    width: 100%;
+    border-top: 1px solid var(--primary-bg-color);
+    border-bottom: 1px solid var(--primary-bg-color);
+    margin-top: 12px;
+    padding: 10px 0px;
+}
+.quick-links{
+    list-style: none;
+    display: grid;
+    grid-template-areas:  "new-rel rece-added"
+                          "nw-songs top-50-songs"
+                          "new-albu top-50-albu"
+                          "all-new-music-vid re-uploads";
+    grid-gap: 20px;  
+    border-bottom: 1px solid var(--primary-bg-color);
+    padding-bottom: 20px;
+
+}
+/* #week, #month, #year{
+
+
+
+    display: none;
+}    
+ .for-month{
+     display: none;
+    
+    
+ }  
+.for-year{
+    display: none;
+    
+
+}
+
+#week:checked ~ .for-week {
+    display: block;
+}
+#week:checked ~ .for-month {
+    display: none;
+}
+#week:checked ~ .for-year {
+    display: none;
+}
+
+#month:checked ~ .for-month {
+    display: block;
+}
+#month:checked ~ .for-week {
+    display: none;
+}
+#month:checked ~ .for-year {
+    display: none;
+}
+
+#year:checked ~ .for-year {
+    display: block;
+}
+#year:checked ~ .for-week {
+    display: none;
+}
+#year:checked ~ .for-month {
+    display: none;
+}.checkers{
+    display: flex;
+}
+.checkers label{
+    margin: 20px 0px;
+    padding: 10px;
+    background-color: var(--dark-color);
+    border-radius: 10px;
+} */
+
+
+
+
+
+/*  Media Queries  */
+@media screen and (max-width:1105px){
+    .main-box{
+        display: block;
+    }
+    .for-uploads{
+        width: 100%;
+    }
+    .all-iframes{
+        width: 60%;
+        margin: auto;
+    }
+}
+@media screen and (max-width:1200px){
+    .wrapper{
+        width: 90%;
+        margin: auto;
+    }
+}
+@media screen and (max-width:10100px){
+    .logo-desc p{
+        display: none;
+    }
+}
+@media screen and (max-width:580px){
+    .logo-desc img{
+        display: none;
+    }
+    
+}
+
+@media screen and (max-width:460px){
+    .new-songs-cont{
+        display: block;
+        /* flex-wrap: wrap; */
+    }
+    .releases{
+        width: 70px;
+    }
+
+}
+@media screen and (max-width:435px){
+   .hide-top-50{
+        display: none !important;
+    }
 }
